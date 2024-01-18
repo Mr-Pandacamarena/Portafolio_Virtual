@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo" >
+                <a href="#">Eduardo Camarena Matias</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">WELCOME</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Eduardo Camarena</h1>
+            <h2>Interaction and Animation Designer - Professional who integrates design, interaction, and animation to generate meaningful and impactful experiences.</h2></p>
+
+           <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100089706183835" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/pandapixelcamarena/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCeE7NPVUNZ8Y_gjwsM0IqHA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/eduardo-camarena-matias-763a48291/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Mr-Pandacamarena/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+    </section>
+
+  <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://www.youtube.com/watch?v=abjefGjmtcc&list=PLo-FRcNL1ESIUimglm_8uq2LtBtlXhaBg&index=3" target="_blank"> <!-- Reemplaza con tu enlace de YouTube -->
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>2D Animation</h3>
+                        <p>Flag Movement</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://www.youtube.com/watch?v=rDqR9_bbpN0&list=PLo-FRcNL1ESIUimglm_8uq2LtBtlXhaBg&index=11" target="_blank"> <!-- Reemplaza con tu enlace de YouTube -->
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>2D Animation</h3>
+                        <p>Walking Cycle</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://www.youtube.com/watch?v=5G-GM9GpcY8&list=PLo-FRcNL1ESIUimglm_8uq2LtBtlXhaBg&index=9" target="_blank"> <!-- Reemplaza con tu enlace de YouTube -->
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>2D Animation</h3>
+                        <p>Lipsync</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://www.youtube.com/watch?v=lqUyDt5k9M8&list=PLo-FRcNL1ESIUimglm_8uq2LtBtlXhaBg&index=16" target="_blank"> <!-- Reemplaza con tu enlace de YouTube -->
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>3D and Special Effects</h3>
+                        <p>Lights and Disintegration</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://www.youtube.com/watch?v=87iDNewFhN0&list=PLo-FRcNL1ESIUimglm_8uq2LtBtlXhaBg&index=19" target="_blank"> <!-- Reemplaza con tu enlace de YouTube -->
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>3D and Special Effects</h3>
+                        <p>Wind, Cloth and Collision</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://pandacamarena.itch.io/good-health?classId=8ecda3b2-233a-4ea5-b5c7-e22014b46cd8&assignmentId=5b36e8d0-cdad-4f2c-9cac-0e51012bd0c1&submissionId=c40fbb01-5c24-684c-bc28-d4b0a4f40ae6" target="_blank"> <!-- Reemplaza con tu enlace de YouTube -->
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>PICO 8 (Lua)</h3>
+                        <p>GoodHealth</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://drive.google.com/drive/folders/1G7vXzT5aeH8w2KbFjYxPFF65fwG-WiMv" target="_blank"> <!-- Reemplaza con tu enlace de YouTube -->
+                    <img src="img/p7.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Unity Dungeon</h3>
+                        <p>Froggy</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://pandacamarena.itch.io/good-health?classId=8ecda3b2-233a-4ea5-b5c7-e22014b46cd8&assignmentId=5b36e8d0-cdad-4f2c-9cac-0e51012bd0c1&submissionId=c40fbb01-5c24-684c-bc28-d4b0a4f40ae6" target="_blank"> <!-- Reemplaza con tu enlace de YouTube -->
+                    <img src="img/p8.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Unity 2D Plataform</h3>
+                        <p>Abducted</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://drive.google.com/file/d/1d6WCgimOITZYisLOXrgze7L25PVPhy7a/view" target="_blank"></a>
+                    <img src="img/p9.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Turn-based combat</h3>
+                        <p>Ryhm</p>
+                    </div>
+                </div>     
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+            <p><span>Hello, I am Eduardo Camarena Matías. </span> I am a passionate UX/UI designer and User-Centered Design enthusiast. I aim to create intuitive and appealing interfaces, leveraging skills in 3D, modeling, HTML programming, C, JavaScript, and video editing to achieve a comprehensive understanding of design.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Age</strong>
+                            25 years old
+                        </li>
+                        <li>
+                            <strong>Phone</strong>
+                            222-1245504
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            eduardocamarena93@gmail.com
+                        </li>
+                        <li>
+                            <strong>Location</strong>
+                            Ciudad de México
+                        </li>
+                        <li>
+                            <strong>Languages</strong>
+                            <span>English B2 and Spanish</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-cube"></i>
+                            <span>ANIMATION</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-unity"></i>
+                            <span>UNITY</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-twitch"></i>
+                            <span>TWITCH</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>CODING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FILMING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-scissors"></i>
+                            <span>EDITION</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+             <!-- Botón de Descarga -->
+      <button id="descargarBtn2">
+        Download CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+    </button>
+
+    <!-- Script para manejar la descarga -->
+    <script>
+        document.getElementById('descargarBtn2').addEventListener('click', function() {
+            // Reemplaza 'ruta_a_tu_cv.pdf' con la ruta a tu archivo CV
+            var rutaCV = 'CV.pdf';
+
+            // Crea un enlace temporal
+            var enlaceTemporal = document.createElement('a');
+            enlaceTemporal.href = rutaCV;
+            enlaceTemporal.download = 'CV.pdf'; // Nombre del archivo descargado
+
+            // Añade el enlace temporal al documento y simula un clic
+            document.body.appendChild(enlaceTemporal);
+            enlaceTemporal.click();
+
+            // Remueve el enlace temporal del documento
+            document.body.removeChild(enlaceTemporal);
+        });
+    </script>
+        </div>
+    </section>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop and Illustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Blender</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Premiere Pro and After Effects</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>User Researcher</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Usability Testing</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Prototyping</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Collaboration</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                        <div class="item izq">
+                        <h4>Professional Life Development Sessions</h4>
+                        <span class="casa">Dimension of Comprehensive University Education</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>The session focused on awakening inner strength and enhancing personal skills, actively seeking tools and approaches to boost my confidence, resilience, and determination in various aspects of my life.</p>
+                            <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Social Service FESRU</h4>
+                        <span class="casa">Espinoza Rugarcia Foundation (Puebla)</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>We promote interactive learning and collaboration, integrating technology meaningfully into the educational environment. My role as an educator has been crucial in inspiring interest in STEM education and promoting key skills such as problem-solving and creativity.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Voice Dubbing Workshop</h4>
+                        <span class="casa">Ibero Puebla University</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>For having participated in and successfully completed the Voice Dubbing Workshop, taught by Professor Denisse Ireri Gonzales Pérez from June 13 to June 24, 2022, with a duration of 20 hours.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                     <div class="item izq">
+                        <h4>Diseñador de Interacción y Animación</h4>
+                        <span class="casa">Ibero Puebla University</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Creación de Experiencias de Usuario de UX/UI, paginas web con Wordpress, programación en C, Javascript, HTML, P5.js; además de animación 2D y 3D, edición de video y doblaje de voz.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work Experience</h3>
+                    <div class="item der">
+                        <h4>Experience and Animation Designer for Apps.</h4>
+                        <span class="casa">AnimatioMX</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>Active contributor to the production of animations for internal applications and interfaces, contributing to the visual and functional enrichment of the company's products.</p>
+                        <br>
+                        <h4>Key Achievement</h4>
+                        <p>Notable increase of 20% in user experience, result of the animations created.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Udemy UX Course</h4>
+                        <span class="casa">UX Writing: content design and user experience</span>
+                        <span class="fecha">By UX space - Javier Cañas</span>
+                        <p>This course not only provided a solid foundation in UX Writing but also equipped me with the essential tools to excel in User-Centered Design. Thanks to Javier Cañas' guidance, I am prepared to create impactful and effective digital experiences.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Udemy UI Course</h4>
+                        <span class="casa">UI Design: visual design and interface design with figma 2023</span>
+                        <span class="fecha">By UX space - Javier Cañas</span>
+                        <p>This course provided me with a comprehensive understanding of UI Design, enabling me to create impactful and attractive interfaces. Under the guidance of Javier Cañas, I have strengthened my ability to translate abstract concepts into coherent visual designs, contributing to the development of visually appealing and highly functional digital products.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                     <div class="item der">
+                        <h4>Udemy UX/UI Design Course</h4>
+                        <span class="casa">UX Design: User Experience UX/UI + Figma 2023</span>
+                        <span class="fecha">By UX space - Javier Cañas</span>
+                        <p>This course provided me with a comprehensive perspective on UX Design, allowing me to conceive and develop digital products that are not only visually appealing but also deliver exceptional user experiences. Thanks to the expert guidance of Javier Cañas, I am equipped to tackle challenges in user-centered product design and contribute to the development of impactful digital solutions.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+<!-- Botón de Descarga de Portafolio -->
+
+<button id="descargarPortafolioBtn">
+    Download Portfolio <i class="fa-solid fa-download"></i>
+    <span class="overlay"></span>
+</button>
+
+<!-- Script para manejar la descarga del Portafolio -->
+<script>
+    document.getElementById('descargarPortafolioBtn').addEventListener('click', function() {
+        // Reemplaza 'ruta_a_tu_portafolio.pdf' con la ruta a tu archivo de portafolio
+        var rutaPortafolio = 'Portafolio.pdf';
+
+        // Crea un enlace temporal
+        var enlaceTemporal = document.createElement('a');
+        enlaceTemporal.href = rutaPortafolio;
+        enlaceTemporal.download = 'Portafolio.pdf'; // Nombre del archivo descargado
+
+        // Añade el enlace temporal al documento y simula un clic
+        document.body.appendChild(enlaceTemporal);
+        enlaceTemporal.click();
+
+        // Remueve el enlace temporal del documento
+        document.body.removeChild(enlaceTemporal);
+    });
+</script>
+</div>
+        <div class="contenido-seccion">
+            <h2>CONTACT ME</h2>
+            <div class="fila">
+                <!-- Formulario -->
+            <div class="col" id="contact-form" >
+
+
+    <input type="text" id="nombre" placeholder="Tú Nombre">
+    <input type="text" id="telefono" placeholder="Número telefónico">
+    <input type="text" id="correo" placeholder="Dirección de correo">
+    <input type="text" id="tema" placeholder="Tema">
+    <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+    <button type="button" onclick="enviarCorreo()"> <span class="overlay"></span>Send Message<i class= "fa-solid fa-paper-plane" ></i></button>
+
+</div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ochoa de Miranda 39, Ciudad de Mexico
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contact me: 2221245504
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: eduardocamarena93@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           
+
+        <div id="popup" class="popup">
+    <div class="popup-content">
+    <p>¡Email sent successfully!</p>
+    <button onclick="cerrarPopup()">Cerrar</button>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100089706183835" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/pandapixelcamarena/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCeE7NPVUNZ8Y_gjwsM0IqHA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/eduardo-camarena-matias-763a48291/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Mr-Pandacamarena/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+    </footer>
+
+    <script src="script.js"> 
+
+    function enviarCorreo() {
+        // Aquí puedes agregar la lógica para enviar el correo
+        // Por ejemplo, podrías usar AJAX para enviar los datos del formulario a un servidor
+        // y procesar el envío del correo en el servidor.
+
+        // Aquí un ejemplo básico de cómo imprimir los datos del formulario en la consola:
+        var nombre = document.getElementById('nombre').value;
+        var telefono = document.getElementById('telefono').value;
+        var correo = document.getElementById('correo').value;
+        var tema = document.getElementById('tema').value;
+        var mensaje = document.getElementById('mensaje').value;
+
+        console.log("Nombre: " + nombre);
+        console.log("Teléfono: " + telefono);
+        console.log("Correo: " + correo);
+        console.log("Tema: " + tema);
+        console.log("Mensaje: " + mensaje);
+    }
+
+    </script>
+</body>
+</html>
